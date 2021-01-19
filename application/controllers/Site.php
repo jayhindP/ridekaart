@@ -11,7 +11,7 @@ class Site extends CI_Controller
 // 		$this->load->database();
 		$this->controller = "site/";
 		$this->load->library('session');
-		$this->load->library('excel');
+// 		$this->load->library('excel');
         ini_set('memory_limit', '-1');
         error_reporting(0);
 	}
