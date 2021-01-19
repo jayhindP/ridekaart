@@ -8,7 +8,7 @@ class Site extends CI_Controller
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->model('base');
-		$this->load->database();
+// 		$this->load->database();
 		$this->controller = "site/";
 		$this->load->library('session');
 		$this->load->library('excel');
@@ -123,7 +123,7 @@ class Site extends CI_Controller
         $auth_id = $this->session->userdata('auth_id');
         
         $res['user'] = 0;
-        $res['category'] = $this->db->get('category')->num_rows();
+        $res['category'] = 0;//$this->db->get('category')->num_rows();
         $res['location'] = 0;
         $res['auth_type'] = $auth_type;
         
